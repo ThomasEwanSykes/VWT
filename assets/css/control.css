@@ -1,0 +1,149 @@
+ /* Dark mode styling */
+ body {
+    background-color: #131313;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+
+    position: fixed;
+    width: 250px;
+    bottom: 0;
+}
+
+/* Sidebar styling */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    margin: 10px 0;
+    background-color: #333;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+/* Form styling */
+form {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label,
+input,
+select {
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 200px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.iframe-container {
+    margin-top: 20px;
+    border: 1px solid #444;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 8px;
+    height: 1000px;
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* For WebKit Browsers (e.g., Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 16px;
+    /* Adjust the width for vertical scrollbars */
+    height: 16px;
+    /* Adjust the height for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Scrollbar thumb color */
+    border-radius: 8px;
+    /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Thumb color on hover */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Track color */
+}
+
+/* For Edge and Internet Explorer */
+html {
+    scrollbar-face-color: #888;
+    scrollbar-track-color: #f1f1f1;
+}
